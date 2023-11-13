@@ -1,0 +1,75 @@
+body{
+    background: radial-gradient(pink, black);
+    display: flex;                                /* to arrange and center content more easily */
+    justify-content: center;                     /* Center content horizontally */
+    align-items: center;                        /* Center content vertically */
+    height: 100vh;                             /* Set the height of the body to 100% of the viewport height */
+    flex-direction: column;                   /* Arrange content in a column layout */
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+form {
+    width: 500px;
+    /* height: 400px; */
+    border: 2px solid #ccc;
+    padding: 30px;         /* Padding creates space between the content and the border. */
+    background: #fff;
+    border-radius: 15px;  /*This adds rounded corners to the form */
+    z-index: 2;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;  /* it pushes down the content that follows the heading. */
+}
+
+input {
+	display: block;    /* Block elements take up the full width of their container and start on a new line, which is useful for formatting form elements. */
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+    z-index: 2;
+    position: relative;
+}
+
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
+}
+
+button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+    z-index: 2;
+    position: relative;
+}
+
+button:hover{ /* make button transparent when hovering over it */
+	opacity: .7;
+}
+
+.ca { /* These styles are commonly used for styling links or clickable elements */
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #444;
+    z-index: 2;
+    position: relative;
+}
+.ca:hover { 
+	text-decoration: underline;
+} 
+
